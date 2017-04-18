@@ -1,9 +1,6 @@
-## Welcome to Google Explorer
-# Special thanks to ArchStrike and BlackArch for supporting ;)
-![ArchStrike](http://i.imgur.com/i0irzZJ.png) ![BlackArch](http://i.imgur.com/3JED0EN.png)
+This is a copy of anarcoder tool for python 2.
 
-
-**[+] Google Mass Explorer (PYTHON 3.6)**
+**[+] Google Mass Explorer (PYTHON 2)**
 
 This is a automated robot for google search engine.
 
