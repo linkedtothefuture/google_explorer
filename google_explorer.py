@@ -313,10 +313,7 @@ class GoogleScanner:
         url_parsed = urlparse(google_domain)
 
         if 'www' in url_parsed.path or 'www' in url_parsed.netloc:
-            print('\n[####] Please just put google domain in --google_domain'
-                  'argument Ex: --google_domain="google.co.uk" [####]')
-            print('Your option was: {0}'.format(google_domain))
-            sys.exit(1)
+            url_parsed = urlparse(google_domain.replace("www.",""))
 
         if url_parsed.path in google_domains_list:
             return 'http://www.' + url_parsed.path
