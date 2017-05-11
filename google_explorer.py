@@ -251,11 +251,9 @@ class GoogleScanner:
             driver.wait.until(EC.presence_of_element_located((
                 By.XPATH, navigation_bar_xpath)))
             captcha = 'xxx'
-            return captcha
         except:
             captcha = None
-            return captcha
-            pass
+        return captcha 
 
     def write_results_to_file(self, results, filename):
         with open(filename, 'a') as f:
@@ -282,7 +280,6 @@ class GoogleScanner:
             next_page = driver.find_element_by_id("pnnext")
         except:
             next_page = 'xxx'
-            pass
 
         while next_page is not None:
             print('parsing links from page..')
